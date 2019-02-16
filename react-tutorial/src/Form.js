@@ -21,6 +21,11 @@ class Form extends Component {
 		});
 	};
 
+	submitForm = () => {
+		this.props.handleSubmit(this.state); // pass through Form state as character parameter in handleSubmit
+		this.setState(this.initialState); // reset to the initial state to clear the form after submit
+	};
+
 	render() {
 		const { name, job } = this.state; // store our two properties from state
 
