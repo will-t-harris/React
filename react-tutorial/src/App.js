@@ -26,6 +26,7 @@ class App extends Component {
 		return (
 			<div className="container">
 				<h1>React Tutorial</h1>
+				<p>Add a character with a name and a job</p>
 				<Table
 					characterData={characters}
 					removeCharacter={this.removeCharacter}
