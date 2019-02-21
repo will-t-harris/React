@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Counter extends Component {
 	state = {
-		count: 0,
+		count: this.props.value,
 	};
 
 	handleIncrement = product => {
@@ -10,6 +10,7 @@ class Counter extends Component {
 	};
 
 	render() {
+		console.log("props", this.props);
 		return (
 			<React.Fragment>
 				<span className={this.getBadgeClasses()}>{this.formatCount()}</span>
