@@ -19,6 +19,7 @@ class Counter extends Component {
 				>
 					Increment
 				</button>
+				<button className="btn btn-danger btn-sm m-2">Delete</button>
 			</React.Fragment>
 		);
 	}
